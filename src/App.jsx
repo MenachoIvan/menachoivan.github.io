@@ -16,11 +16,11 @@ function App() {
         <Education />
         <TechSkills />
       </main>
-      <footer className='py-20 text-center border-t borderslate-900'>
-        <p className='text-slate-600 front-mono text-[10px] tracking-[0.3em]'>
-          IVAN_MENACHO // {new Date().getFullYear()} // BUILD WITH REACT AND VITE
+      <footer className="py-12 md:py-20 text-center border-t border-slate-900">
+        <p className="text-slate-600 font-mono text-[9px] md:text-[10px] tracking-[0.2em] md:tracking-[0.3em] px-4">
+          IVÁN_MENACHO // {new Date().getFullYear()} // BUILD WITH REACT & VITE
         </p>
-      </footer>
+    </footer>
       </div>
   );
 }

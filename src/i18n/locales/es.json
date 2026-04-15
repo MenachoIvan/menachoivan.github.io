@@ -1,0 +1,40 @@
+{
+  "hero": {
+    "role": "// Desarrollador Backend y Técnico de Sistemas",
+    "description": "Especializado en el desarrollo de APIs robustas y optimización de sistemas. Actualmente impulsando la infraestructura digital en",
+    "cta": "Hablemos",
+    "status": "Disponible para proyectos"
+  },
+  "nav": {
+    "contact": "Contacto"
+  },
+  "techskills": {
+    "stack": "// Stack_Tecnico",
+    "lat": "Lenguajes y Tecnologías",
+    "filo": "Filosofía de aprendizaje",
+    "filodesc": "Capacidad para aprender de forma **autodidacta** y adaptarme rápidamente a nuevas tecnologías. Mi enfoque se centra en la resolución eficiente de problemas, independientemente del lenguaje o plataforma."
+  },
+  "education": {
+    "title": "Educación",
+    "degree": "Grado en Técnicas de Desarrollo de Aplicaciones Web y Móviles",
+    "uni": "Universitat Rovira i Virgili",
+    "date": "Febrero 2025",
+    "lang": "Idiomas",
+    "castcat": "Castellano / Catalán",
+    "castcatlvl": "Nativo",
+    "eng": "Inglés",
+    "englvl": "Técnico / B2"
+  },
+  "corework": {
+    "comment": "// Actualidad_y_Proyectos",
+    "position": "Sistemas de Información en",
+    "positiondesc": "Gestión integral del ecosistema de **Ticketing**, asegurando la integridad de los datos y el flujo constante de información en un entorno de alta demanda.",
+    "dataadmin": "Administración de Datos",
+    "dataadmindesc": "Gestión de bases de datos críticas y mantenimiento preventivo de APIs internas.",
+    "internalprojects": "Soporte y Proyectos Internos",
+    "internalprojectsdesc": "Desarrollo de herramientas para la optimización de procesos operativos.",
+    "featured": "Proyecto Destacado",
+    "projecttitle": "Ticketing & Hotels Interface",
+    "projectdesc": " Desarrollo de una interfaz para conectar sistemas de reservas con el motor de ticketing. Automatiza el flujo de información, eliminando errores manuales y agilizando el acceso de los clientes."
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "hero": {
+    "role": "// Backend Developer & Systems Tech",
+    "description": "Specialized in robust API development and systems optimization. Currently driving digital infrastructure at",
+    "cta": "Let's talk",
+    "status": "Available for projects"
+  },
+  "nav": {
+    "contact": "Contact me"
+  },
+  "techskills": {
+    "stack": "// Tech_Stack",
+    "lat": "Languages and Technologies",
+    "filo": "Learning Philosophy",
+    "filodesc": "Ability to learn independently and adapt quickly to new technologies. My approach focuses on efficient problem-solving, regardless of language or platform."
+  },
+  "education": {
+    "title": "Education",
+    "degree": "Degree in Web and Mobile Application Development Techniques",
+    "uni": "Rovira i Virgili University",
+    "date": "February 2025",
+    "lang": "Languages",
+    "castcat": "Spanish / Catalan",
+    "castcatlvl": "Native",
+    "eng": "English",
+    "englvl": "Technical / B2"
+  },
+  "corework": {
+    "comment": "// News and Projects",
+    "position": "Information Systems in",
+    "positiondesc": "Comprehensive management of the **Ticketing** ecosystem, ensuring data integrity and a constant flow of information in a high-demand environment.",
+    "dataadmin": "Data Administration",
+    "dataadmindesc": "Management of critical databases and preventive maintenance of internal APIs.",
+    "internalprojects": "Internal Support and Projects",
+    "internalprojectsdesc": "Development of tools for optimizing operational processes.",
+    "featured": "Featured Project",
+    "projecttitle": "Ticketing & Hotels Interface",
+    "projectdesc": "Development of an interface to connect reservation systems with the ticketing engine. Automates the flow of information, eliminating manual errors and streamlining customer access."
+  }
+}

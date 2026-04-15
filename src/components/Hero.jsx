@@ -1,11 +1,14 @@
-import React from 'react';
+import React from "react";
+import { useTranslation } from "react-i18next";
 
 export const Hero = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="py-12 md:py-20 flex flex-col items-center md:items-start text-center md:text-left">
       <div className="mb-4">
         <span className="text-blue-500 font-mono text-[10px] md:text-sm tracking-widest uppercase italic">
-          // Backend Developer & Information Systems Technician
+          {t("hero.role")}
         </span>
       </div>
 
@@ -17,23 +20,26 @@ export const Hero = () => {
       </h1>
 
       <p className="text-slate-400 text-sm md:text-xl max-w-2xl leading-relaxed mb-10 px-4 md:px-0">
-        Especializado en el desarrollo de APIs robustas y optimización de sistemas. 
-        Actualmente impulsando la infraestructura digital en <span className="text-white font-semibold italic border-b-2 border-blue-500/30">PortAventura World</span>.
+        {t("hero.description")}{" "}
+        <span className="text-white font-semibold italic border-b-2 border-blue-500/30">
+          PortAventura World
+        </span>
+        .
       </p>
 
       <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto px-6 sm:px-0">
-        <a 
+        <a
           href="mailto:ivanmenachodominguez@gmail.com"
           className="bg-blue-600 hover:bg-blue-500 text-white px-8 py-4 rounded-xl font-bold transition-all text-sm md:text-base text-center"
         >
-          Hablemos
+          {t("hero.cta")}
         </a>
         <div className="flex items-center justify-center gap-2 px-6 py-4 rounded-xl border border-slate-800 text-slate-400 font-mono text-[10px] md:text-sm">
           <span className="relative flex h-2 w-2">
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
             <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
           </span>
-          Disponible para proyectos
+          {t("hero.status")}
         </div>
       </div>
     </section>

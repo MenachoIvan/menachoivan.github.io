@@ -1,0 +1,40 @@
+{
+  "hero": {
+    "role": "// Desenvolupador Backend i Tècnic de Sistemes",
+    "description": "Especialitzat en el desenvolupament d'APIs robustes i optimització de sistemes. Actualment impulsant la infraestructura digital a",
+    "cta": "Parlem",
+    "status": "Disponible per a projectes"
+  },
+  "nav": {
+    "contact": "Contacte"
+  },
+  "techskills": {
+    "stack": "// Stack_Tecnic",
+    "lat": "Llenguatges i Tecnologies",
+    "filo": "Filosofia d'aprenentatge",
+    "filodesc": "Capacitat per aprendre de forma **autodidacta** i adaptar-me ràpidament a noves tecnologies. El meu enfocament se centra en la resolució eficient de problemes, independentment del llenguatge o plataforma."
+  },
+  "education": {
+    "title": "Educació",
+    "degree": "Grau en Tècniques de Desenvolupament d'Aplicacions Web i Mòbils",
+    "uni": "Universitat Rovira i Virgili",
+    "date": "Febrer 2025",
+    "lang": "Idiomes",
+    "castcat": "Castellà / Català",
+    "castcatlvl": "Natiu",
+    "eng": "Anglès",
+    "englvl": "Tècnic / B2"
+  },
+  "corework": {
+    "comment": "// Actualitat_i_Projectes",
+    "position": "Sistemes d'informació a",
+    "positiondesc": "Gestió integral de l'ecosistema de **Ticketing**, assegurant la integritat de les dades i el flux constant d'informació en un entorn d'alta demanda.",
+    "dataadmin": "Administració de dades",
+    "dataadmindesc": "Gestió de bases de dades crítiques i manteniment preventiu d'APIs internes.",
+    "internalprojects": "Suport i Projectes Interns",
+    "internalprojectsdesc": "Desenvolupament d'eines per a l'optimització de processos operatius.",
+    "featured": "Projecte Destacat",
+    "projecttitle": "Ticketing & Hotels Interface",
+    "projectdesc": " Desenvolupament d'una interfície per connectar sistemes de reserves amb el motor de tiquet. Automatitza el flux d'informació, elimina errors manuals i agilitza l'accés dels clients."
+  }
+}

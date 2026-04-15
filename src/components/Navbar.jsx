@@ -9,6 +9,7 @@ export const Navbar = () => {
   const languages = [
     { code: "en", label: "English", countryCode: "GB" },
     { code: "es", label: "Español", countryCode: "ES" },
+    { code: "cat", label: "Català", countryCode: "ES-CT " },
   ];
 
   const currentLanguage =

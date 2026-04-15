@@ -9,7 +9,7 @@ export const Navbar = () => {
   const languages = [
     { code: "en", label: "English", countryCode: "GB" },
     { code: "es", label: "Español", countryCode: "ES" },
-    { code: "cat", label: "Català", countryCode: "ES-CT " },
+    { code: "cat", label: "Català", countryCode: "cat" },
   ];
 
   const currentLanguage =
@@ -18,6 +18,13 @@ export const Navbar = () => {
   const changeLanguage = (code) => {
     i18n.changeLanguage(code);
     setIsOpen(false);
+  };
+
+  const getFlagSrc = (countryCode) => {
+    if (countryCode === "cat") {
+      return "./cat.svg";
+    }
+    return `https://purecatamphetamine.github.io/country-flag-icons/3x2/${countryCode}.svg`;
   };
 
   return (
@@ -36,7 +43,7 @@ export const Navbar = () => {
           >
             <div className="w-5 h-5 rounded-full overflow-hidden border border-slate-700 shrink-0 bg-slate-800">
               <img
-                src={`https://purecatamphetamine.github.io/country-flag-icons/3x2/${currentLanguage.countryCode}.svg`}
+                src={getFlagSrc(currentLanguage.countryCode)}
                 alt={currentLanguage.label}
                 className="w-full h-full object-cover"
               />
@@ -69,7 +76,7 @@ export const Navbar = () => {
                   >
                     <div className="w-5 h-5 rounded-full overflow-hidden border border-slate-700 shrink-0 shadow-sm bg-slate-800">
                       <img
-                        src={`https://purecatamphetamine.github.io/country-flag-icons/3x2/${lang.countryCode}.svg`}
+                        src={getFlagSrc(lang.countryCode)}
                         alt={lang.label}
                         className="w-full h-full object-cover"
                       />

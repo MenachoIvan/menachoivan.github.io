@@ -20,8 +20,10 @@
     "uni": "Universitat Rovira i Virgili",
     "date": "Febrero 2025",
     "lang": "Idiomas",
-    "castcat": "Castellano / Catalán",
-    "castcatlvl": "Nativo",
+    "cast": "Castellano",
+    "castlvl": "Nativo",
+    "cat": "Catalán",
+    "catlvl": "Nativo",
     "eng": "Inglés",
     "englvl": "Técnico / B2"
   },

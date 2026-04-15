@@ -44,10 +44,24 @@ export const Education = () => {
             <div>
               <div className="flex justify-between mb-2 items-end">
                 <span className="text-slate-300 text-sm md:text-base font-medium">
-                  {t("education.castcat")}
+                  {t("education.cast")}
                 </span>
                 <span className="text-blue-400 text-[10px] md:text-xs font-mono uppercase">
-                  {t("education.castcatlvl")}
+                  {t("education.castlvl")}
+                </span>
+              </div>
+              <div className="w-full bg-slate-800 h-1.5 rounded-full overflow-hidden">
+                <div className="bg-blue-500 h-full w-full"></div>
+              </div>
+            </div>
+
+            <div>
+              <div className="flex justify-between mb-2 items-end">
+                <span className="text-slate-300 text-sm md:text-base font-medium">
+                  {t("education.cat")}
+                </span>
+                <span className="text-blue-400 text-[10px] md:text-xs font-mono uppercase">
+                  {t("education.catlvl")}
                 </span>
               </div>
               <div className="w-full bg-slate-800 h-1.5 rounded-full overflow-hidden">

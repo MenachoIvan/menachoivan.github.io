@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { Terminal as TerminalIcon } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
-export const Terminal = () => {
+export const Terminal = ({ isDevMode, setDevMode }) => {
   const { t } = useTranslation();
   const [input, setInput] = useState("");
   const [history, setHistory] = useState([
@@ -27,33 +27,59 @@ export const Terminal = () => {
 
   const formatOutput = (text) => {
     const urlRegex = /(https?:\/\/[^\s]+)/g;
-    const parts = text.split(urlRegex);
-
-    return parts.map((part, i) => {
-      if (part.match(urlRegex)) {
-        return (
-          <a
-            key={i}
-            href={part}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-orange-500 hover:text-orange-400 underline decoration-orange-500/30 underline-offset-4 transition-colors"
-          >
-            {part}
-          </a>
-        );
-      }
-      return part;
-    });
+    return text.split(urlRegex).map((part, i) =>
+      part.match(urlRegex) ? (
+        <a
+          key={i}
+          href={part}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={`underline underline-offset-4 decoration-1 transition-colors ${isDevMode ? "text-lime-400 decoration-lime-500/50" : "text-orange-500 decoration-orange-500/30"}`}
+        >
+          {part}
+        </a>
+      ) : (
+        part
+      ),
+    );
   };
 
   const handleCommand = (e) => {
     if (e.key === "Enter") {
+      e.preventDefault();
       const cleanInput = input.toLowerCase().trim();
 
       if (cleanInput === "clear") {
         setHistory([]);
         setInput("");
+        return;
+      }
+
+      if (cleanInput === "debug" || cleanInput === "dev") {
+        setDevMode(true);
+        setHistory((prev) => [
+          ...prev,
+          { type: "input", content: input },
+          {
+            type: "output",
+            content: ">> ATTACHING_DEBUGGER_SESSION... SUCCESS.",
+          },
+          { type: "output", key: "terminal.debug" },
+        ]);
+        setInput("");
+        setTimeout(focusInput, 10);
+        return;
+      }
+
+      if (cleanInput === "debug --off" || cleanInput === "dev --off") {
+        setDevMode(false);
+        setHistory((prev) => [
+          ...prev,
+          { type: "input", content: input },
+          { type: "output", content: ">> DETACHING_DEBUGGER... EXIT_CODE_0." },
+        ]);
+        setInput("");
+        setTimeout(focusInput, 10);
         return;
       }
 
@@ -69,16 +95,18 @@ export const Terminal = () => {
         "run",
         "marathon",
         "prs",
+        "debug",
+        "dev",
       ];
 
-      if (cleanInput === "help") {
-        newHistory.push({ type: "output", key: "terminal.help" });
-      } else if (cleanInput === "experience" || cleanInput === "exp") {
-        newHistory.push({ type: "output", key: "terminal.exp" });
-      } else if (["run", "marathon", "prs"].includes(cleanInput)) {
-        newHistory.push({ type: "output", key: "terminal.run" });
-      } else if (validCommands.includes(cleanInput)) {
-        newHistory.push({ type: "output", key: `terminal.${cleanInput}` });
+      if (validCommands.includes(cleanInput)) {
+        let key = `terminal.${cleanInput}`;
+        if (cleanInput === "experience") key = "terminal.exp";
+        if (["run", "marathon", "prs"].includes(cleanInput))
+          key = "terminal.run";
+        if (cleanInput === "dev") key = "terminal.debug";
+
+        newHistory.push({ type: "output", key });
       } else if (cleanInput !== "") {
         newHistory.push({
           type: "output",
@@ -93,59 +121,63 @@ export const Terminal = () => {
   };
 
   return (
-    <section className="py-16 px-4 max-w-4xl mx-auto">
+    <div
+      onClick={focusInput}
+      className={`border transition-all duration-300 cursor-text shadow-2xl ${
+        isDevMode
+          ? "bg-black border-lime-500 shadow-lime-500/20"
+          : "bg-[#0a0f1e] border-slate-800 rounded-xl"
+      }`}
+    >
       <div
-        onClick={focusInput}
-        className="bg-[#0a0f1e] border border-slate-800 rounded-xl overflow-hidden shadow-2xl font-mono text-sm group hover:border-blue-500/30 transition-colors duration-500 cursor-text"
+        className={`px-4 py-1.5 flex items-center justify-between border-b ${isDevMode ? "bg-lime-900/20 border-lime-500/30 font-mono" : "bg-slate-900/80 border-slate-800"}`}
       >
-        <div
-          className="bg-slate-900/80 px-4 py-2 flex items-center justify-between border-b border-slate-800 cursor-default"
-          onClick={(e) => e.stopPropagation()}
-        >
-          <div className="flex gap-1.5">
-            <div className="w-3 h-3 rounded-full bg-red-500/20 group-hover:bg-red-500/50 transition-colors"></div>
-            <div className="w-3 h-3 rounded-full bg-yellow-500/20 group-hover:bg-yellow-500/50 transition-colors"></div>
-            <div className="w-3 h-3 rounded-full bg-green-500/20 group-hover:bg-green-500/50 transition-colors"></div>
-          </div>
-          <div className="flex items-center gap-2 text-slate-500 text-[10px] uppercase tracking-widest">
-            <TerminalIcon size={12} />
-            system_terminal
-          </div>
+        <div className="flex gap-1.5">
+          <div
+            className={`w-3 h-3 rounded-full ${isDevMode ? "bg-lime-500 animate-pulse" : "bg-red-500/20"}`}
+          ></div>
+          <div
+            className={`w-3 h-3 rounded-full ${isDevMode ? "border border-lime-500/40" : "bg-yellow-500/20"}`}
+          ></div>
         </div>
-
         <div
-          ref={scrollRef}
-          className="p-6 h-64 overflow-y-auto bg-slate-950/50 backdrop-blur-sm"
+          className={`text-[10px] uppercase tracking-widest ${isDevMode ? "text-lime-500 font-bold font-mono" : "text-slate-500"}`}
         >
-          {history.map((line, i) => (
-            <div
-              key={i}
-              className={`mb-1 ${line.type === "input" ? "text-blue-400" : "text-slate-300"} leading-relaxed`}
-            >
-              {line.type === "input" ? (
-                <>
-                  <span className="text-blue-600 mr-2">➜</span>
-                  {line.content}
-                </>
-              ) : (
-                formatOutput(t(line.key, line.params))
-              )}
-            </div>
-          ))}
-          <div className="flex items-center mt-2">
-            <span className="text-blue-600 mr-2">➜</span>
-            <input
-              ref={inputRef}
-              type="text"
-              className="bg-transparent border-none outline-none text-blue-400 w-full caret-blue-500"
-              value={input}
-              onChange={(e) => setInput(e.target.value)}
-              onKeyDown={handleCommand}
-              autoFocus
-            />
-          </div>
+          {isDevMode ? "DEBUG_SESSION://IVAN_MENACHO" : "system_terminal"}
         </div>
       </div>
-    </section>
+      <div
+        ref={scrollRef}
+        className="p-4 h-64 overflow-y-auto bg-black/40 font-mono"
+      >
+        {history.map((line, i) => (
+          <div
+            key={i}
+            className={`mb-1 ${line.type === "input" ? (isDevMode ? "text-lime-300" : "text-blue-400") : isDevMode ? "text-lime-500/80" : "text-slate-400"}`}
+          >
+            {line.type === "input" && (
+              <span className="mr-2 opacity-50">$</span>
+            )}
+            {line.key ? formatOutput(t(line.key, line.params)) : line.content}
+          </div>
+        ))}
+        <div className="flex mt-1">
+          <span
+            className={`${isDevMode ? "text-lime-500" : "text-blue-500"} mr-2 opacity-70`}
+          >
+            #
+          </span>
+          <input
+            ref={inputRef}
+            type="text"
+            className={`bg-transparent border-none outline-none w-full ${isDevMode ? "text-lime-300" : "text-blue-400"}`}
+            value={input}
+            onChange={(e) => setInput(e.target.value)}
+            onKeyDown={handleCommand}
+            autoFocus
+          />
+        </div>
+      </div>
+    </div>
   );
 };

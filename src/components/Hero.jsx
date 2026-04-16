@@ -1,45 +1,76 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 
-export const Hero = () => {
+export const Hero = ({ isDevMode }) => {
   const { t } = useTranslation();
 
   return (
-    <section className="py-12 md:py-20 flex flex-col items-center md:items-start text-center md:text-left">
-      <div className="mb-4">
-        <span className="text-blue-500 font-mono text-[10px] md:text-sm tracking-widest uppercase italic">
-          {t("hero.role")}
-        </span>
-      </div>
-
-      <h1 className="text-4xl sm:text-6xl md:text-8xl font-extrabold text-white leading-tight mb-6 tracking-tighter">
-        Iván <br />
-        <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300 pr-2 md:pr-4">
-          Menacho
-        </span>
-      </h1>
-
-      <p className="text-slate-400 text-sm md:text-xl max-w-2xl leading-relaxed mb-10 px-4 md:px-0">
-        {t("hero.description")}{" "}
-        <span className="text-white font-semibold italic border-b-2 border-blue-500/30">
-          PortAventura World
-        </span>
-        .
-      </p>
-
-      <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto px-6 sm:px-0">
-        <a
-          href="mailto:ivanmenachodominguez@gmail.com"
-          className="bg-blue-600 hover:bg-blue-500 text-white px-8 py-4 rounded-xl font-bold transition-all text-sm md:text-base text-center"
+    <section className="relative">
+      <div className="flex flex-col gap-4">
+        <h2
+          className={`font-mono text-xs md:text-sm tracking-[0.3em] transition-colors duration-500 ${
+            isDevMode ? "text-lime-500/70" : "text-blue-500/70"
+          }`}
         >
-          {t("hero.cta")}
-        </a>
-        <div className="flex items-center justify-center gap-2 px-6 py-4 rounded-xl border border-slate-800 text-slate-400 font-mono text-[10px] md:text-sm">
-          <span className="relative flex h-2 w-2">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-            <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
-          </span>
-          {t("hero.status")}
+          // WEB DEVELOPER & INFORMATION SYSTEMS TECHNICIAN
+        </h2>
+
+        <div className="flex flex-col mb-6">
+          <h1 className="text-6xl md:text-8xl font-bold text-white tracking-tighter">
+            Iván
+          </h1>
+          <h1
+            className={`text-6xl md:text-8xl font-bold tracking-tighter transition-all duration-500 ${
+              isDevMode
+                ? "text-lime-500 drop-shadow-[0_0_15px_rgba(132,204,22,0.5)]"
+                : "text-blue-400"
+            }`}
+          >
+            Menacho
+          </h1>
+        </div>
+
+        <p
+          className={`max-w-xl text-lg leading-relaxed transition-colors duration-500 ${
+            isDevMode ? "text-lime-100/70" : "text-slate-400"
+          }`}
+        >
+          {t("hero.description")}
+        </p>
+
+        <div className="flex flex-wrap items-center gap-4 mt-4">
+          <button
+            className={`px-8 py-3 rounded-xl font-bold transition-all duration-500 active:scale-95 ${
+              isDevMode
+                ? "bg-lime-500 text-black shadow-[0_0_20px_rgba(132,204,22,0.4)] hover:bg-lime-400"
+                : "bg-blue-600 text-white hover:bg-blue-500 shadow-lg shadow-blue-500/20"
+            }`}
+          >
+            Let's talk
+          </button>
+
+          <div
+            className={`flex items-center gap-2 px-4 py-3 rounded-xl border transition-all duration-500 ${
+              isDevMode
+                ? "border-lime-500/30 bg-lime-500/5"
+                : "border-slate-800 bg-slate-900/50"
+            }`}
+          >
+            <div
+              className={`w-2 h-2 rounded-full animate-pulse ${
+                isDevMode
+                  ? "bg-lime-500 shadow-[0_0_8px_rgba(132,204,22,1)]"
+                  : "bg-green-500"
+              }`}
+            ></div>
+            <span
+              className={`text-xs font-mono tracking-wider ${
+                isDevMode ? "text-lime-500" : "text-slate-400"
+              }`}
+            >
+              Available for projects
+            </span>
+          </div>
         </div>
       </div>
     </section>

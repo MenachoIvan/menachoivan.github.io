@@ -34,13 +34,9 @@
     "awsdate": "Noviembre 2023"
   },
   "corework": {
-    "comment": "// Actualidad_y_Proyectos",
-    "position": "Sistemas de Información en",
-    "positiondesc": "Gestión técnica del ecosistema de admisiones en uno de los destinos turísticos líderes de Europa. Responsable de asegurar la integridad de datos y el rendimiento del sistema en un entorno de alta concurrencia y criticidad operativa.",
-    "dataadmin": "Gestión de Datos",
-    "dataadmindesc": "Administración de bases de datos de alta disponibilidad y evolución de APIs internas. Enfoque en la reducción de latencia y en el mantenimiento preventivo para asegurar la escalabilidad del sistema.",
-    "internalprojects": "Automatización y Soluciones Internas",
-    "internalprojectsdesc": "Diseño y desarrollo de herramientas a medida para la optimización de flujos de trabajo. Transformación de procesos manuales en soluciones digitales automatizadas que mejoran la eficiencia operativa interdepartamental.",
+    "comment": "// Experiencia Principal",
+    "position": "Analista de Sistemas en",
+    "positiondesc": "Especializado en la administración de infraestructuras de datos y el desarrollo de soluciones digitales que mejoran la eficiencia operativa interdepartamental.",
     "featured": "Proyecto Destacado",
     "projecttitle": "Ticketing & Hotels Interface",
     "projectdesc": "Desarrollo de una interfaz para conectar sistemas de reservas de hoteles con el motor de ticketing. Automatiza el flujo de información, eliminando errores manuales y agilizando el acceso de los clientes."
@@ -48,13 +44,14 @@
   "terminal": {
     "welcome": "Menacho OS v1.0.4 - Inicializando sistemas...",
     "instruction": "Escribe 'help' para ver los comandos disponibles.",
-    "help": "Comandos disponibles: about, experience, stack, status, run, contact, clear.",
+    "help": "Comandos disponibles: about, experience, stack, status, run, contact, debug, clear.",
+    "debug": "Usa 'debug' o 'dev' para activar el modo ingeniería. Usa 'debug --off' para volver a producción.",
     "about": "Ingeniero de Software y Especialista en Sistemas. Enfoque actual: optimización de flujos de datos y servicios críticos en PortAventura World.",
     "exp": "[2021-Presente] Sistemas de Información @ PortAventura World. [2022] Erasmus @ UniGe. [2019-2024] Grado en Ingeniería Informática @ URV.",
     "stack": "Backend: Node.js, Java, VB.NET. DB: SQL Server, Oracle. Cloud: AWS Technical Essentials.",
     "status": "Kernel: 1.0.4 | Env: Producción | Estado: Estable | Disponibilidad: 99.9% | Latencia: 12ms",
     "contact": "Iniciando protocolo de comunicación... LinkedIn: https://www.linkedin.com/in/ivan-menacho/ | GitHub: https://github.com/MenachoIvan",
-    "run": "Marcas Personales: Maratón: 3:39:15 | Media Maratón: 1:43:28 | 10K: 43:22. La disciplina lo es todo. Strava: https://www.strava.com/athletes/48209648",
-    "error": "Comando no encontrado: {{command}}. Escribe 'help' para asistencia."
+    "run": "Marcas Personales: Maratón: 3:39:15 | Media Maratón: 1:43:28 | 10K: 43:22. La disciplina lo es todo. Strava: https://www.strava.com/athletes/108502391",
+    "error": "Comando no reconocido: {{command}}. Escribe 'help' para ver la lista de comandos."
   }
 }

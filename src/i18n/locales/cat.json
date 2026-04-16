@@ -26,21 +26,17 @@
     "catlvl": "Natiu",
     "eng": "Anglès",
     "englvl": "Tècnic / B2",
-    "erasmus": "Programa Erasmus+",
+    "erasmus": "Erasmus+ Program",
     "erasmusuni": "Università degli Studi di Genova",
     "erasmusdate": "Febrer 2022",
     "aws": "AWS Technical Essentials",
-    "awsinfo": "Formació d'Amazon Web Services",
+    "awsinfo": "Amazon Web Services Training",
     "awsdate": "Novembre 2023"
   },
   "corework": {
-    "comment": "// Actualitat_i_Projectes",
-    "position": "Sistemes d'Informació a",
-    "positiondesc": "Gestió tècnica de l'ecosistema d'admissions en una de les destinacions turístiques líders d'Europa. Responsable d'assegurar la integritat de dades i el rendiment del sistema en un entorn d'alta concurrència i criticitat operativa.",
-    "dataadmin": "Gestió de Dades",
-    "dataadmindesc": "Administració de bases de dades d'alta disponibilitat i evolució d'APIs internes. Enfocament en la reducció de latència i en el manteniment preventiu per assegurar l'escalabilitat del sistema.",
-    "internalprojects": "Automatització i Solucions Internes",
-    "internalprojectsdesc": "Disseny i desenvolupament d'eines a mida per a l'optimització de fluxos de treball. Transformació de processos manuals en solucions digitals automatitzades que milloren l'eficiència operativa interdepartamental.",
+    "comment": "// Experiència Principal",
+    "position": "Analista de Sistemes a",
+    "positiondesc": "Especialitzat en l'administració d'infraestructures de dades i el desenvolupament de solucions digitals a mida que milloren l'eficiència operativa interdepartamental.",
     "featured": "Projecte Destacat",
     "projecttitle": "Ticketing & Hotels Interface",
     "projectdesc": "Desenvolupament d'una interfície per connectar sistemes de reserves d'hotels amb el motor de ticketing. Automatitza el flux d'informació, eliminant errors manuals i agilitzant l'accés dels clients."
@@ -48,13 +44,14 @@
   "terminal": {
     "welcome": "Menacho OS v1.0.4 - Inicialitzant sistemes...",
     "instruction": "Escriu 'help' per veure les comandes disponibles.",
-    "help": "Comandes disponibles: about, experience, stack, status, run, contact, clear.",
+    "help": "Comandes disponibles: about, experience, stack, status, run, contact, debug, clear.",
+    "debug": "Fes servir 'debug' o 'dev' per activar el mode enginyeria. Fes servir 'debug --off' per tornar a producció.",
     "about": "Enginyer de Programari i Especialista en Sistemes. Enfocament actual: optimització de fluxos de dades i serveis crítics a PortAventura World.",
     "exp": "[2021-Actualitat] Sistemes d'Informació @ PortAventura World. [2022] Erasmus @ UniGe. [2019-2024] Grau en Enginyeria Informàtica @ URV.",
     "stack": "Backend: Node.js, Java, VB.NET. DB: SQL Server, Oracle. Cloud: AWS Technical Essentials.",
     "status": "Kernel: 1.0.4 | Env: Producció | Estat: Estable | Disponibilitat: 99.9% | Latència: 12ms",
     "contact": "Iniciant protocol de comunicació... LinkedIn: https://www.linkedin.com/in/ivan-menacho/ | GitHub: https://github.com/MenachoIvan",
-    "run": "Marques Personals: Marató: 3:39:15 | Mitja Marató: 1:43:28 | 10K: 43:22. La disciplina ho és tot. Strava: https://www.strava.com/athletes/48209648",
-    "error": "Comanda no trobada: {{command}}. Escriu 'help' per assistència."
+    "run": "Marques Personals: Marató: 3:39:15 | Mitja Marató: 1:43:28 | 10K: 43:22. La disciplina ho és tot. Strava: https://www.strava.com/athletes/108502391",
+    "error": "Comanda no reconeguda: {{command}}. Escriu 'help' per veure la llista de comandes."
   }
 }

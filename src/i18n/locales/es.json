@@ -1,7 +1,7 @@
 {
   "hero": {
-    "role": "// Desarrollador Backend y Técnico de Sistemas",
-    "description": "Especializado en el desarrollo de APIs robustas y optimización de sistemas. Actualmente impulsando la infraestructura digital en",
+    "role": "// Desarrollador Web y Técnico de Sistemas de Información",
+    "description": "Desarrollo de software y gestión de sistemas de información con enfoque en la disponibilidad y eficiencia operativa. Actualmente especializado en la optimización de flujos de datos e integración de servicios críticos en",
     "cta": "Hablemos",
     "status": "Disponible para proyectos"
   },
@@ -11,8 +11,8 @@
   "techskills": {
     "stack": "// Stack_Tecnico",
     "lat": "Lenguajes y Tecnologías",
-    "filo": "Filosofía de aprendizaje",
-    "filodesc": "Capacidad para aprender de forma **autodidacta** y adaptarme rápidamente a nuevas tecnologías. Mi enfoque se centra en la resolución eficiente de problemas, independientemente del lenguaje o plataforma."
+    "filo": "Enfoque profesional",
+    "filodesc": "Búsqueda constante de la optimización y automatización de procesos. El enfoque profesional se centra en reducir la carga operativa mediante sistemas bien documentados, integraciones fluidas y una arquitectura lógica que permita el crecimiento sostenible de la plataforma."
   },
   "education": {
     "title": "Educación",
@@ -30,13 +30,13 @@
   "corework": {
     "comment": "// Actualidad_y_Proyectos",
     "position": "Sistemas de Información en",
-    "positiondesc": "Gestión integral del ecosistema de **Ticketing**, asegurando la integridad de los datos y el flujo constante de información en un entorno de alta demanda.",
-    "dataadmin": "Administración de Datos",
-    "dataadmindesc": "Gestión de bases de datos críticas y mantenimiento preventivo de APIs internas.",
-    "internalprojects": "Soporte y Proyectos Internos",
-    "internalprojectsdesc": "Desarrollo de herramientas para la optimización de procesos operativos.",
+    "positiondesc": "Gestión técnica del ecosistema de admisiones en uno de los destinos turísticos líderes de Europa. Responsable de asegurar la integridad de datos y el rendimiento del sistema en un entorno de alta concurrencia y criticidad operativa.",
+    "dataadmin": "Gestión de Datos",
+    "dataadmindesc": "Administración de bases de datos de alta disponibilidad y evolución de APIs internas. Enfoque en la reducción de latencia y en el mantenimiento preventivo para asegurar la escalabilidad del sistema.",
+    "internalprojects": "Automatización y Soluciones Internas",
+    "internalprojectsdesc": "Diseño y desarrollo de herramientas a medida para la optimización de flujos de trabajo. Transformación de procesos manuales en soluciones digitales automatizadas que mejoran la eficiencia operativa interdepartamental.",
     "featured": "Proyecto Destacado",
     "projecttitle": "Ticketing & Hotels Interface",
-    "projectdesc": " Desarrollo de una interfaz para conectar sistemas de reservas con el motor de ticketing. Automatiza el flujo de información, eliminando errores manuales y agilizando el acceso de los clientes."
+    "projectdesc": "Desarrollo de una interfaz para conectar sistemas de reservas de hoteles con el motor de ticketing. Automatiza el flujo de información, eliminando errores manuales y agilizando el acceso de los clientes."
   }
 }

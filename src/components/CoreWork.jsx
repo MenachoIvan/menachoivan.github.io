@@ -6,81 +6,96 @@ export const CoreWork = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="py-16 md:py-24 border-t border-slate-900">
-      <div className="mb-10 md:mb-12">
-        <h3 className="text-blue-500 font-mono text-[10px] md:text-sm mb-2 tracking-widest uppercase">
-          {t("corework.comment")}
-        </h3>
-        <h2 className="text-2xl md:text-4xl font-bold text-white leading-tight">
-          {t("corework.position")} <br className="md:hidden" />
-          <span className="text-blue-500 md:text-white">
-            PortAventura World
+    <section className="py-20 md:py-32">
+      <div className="flex flex-col gap-12">
+        <div>
+          <span className="text-blue-500 font-mono text-xs md:text-sm tracking-widest uppercase mb-4 block">
+            {t("corework.comment")}
           </span>
-        </h2>
-      </div>
+          <h2 className="text-3xl md:text-5xl font-bold text-white tracking-tight">
+            {t("corework.position")}{" "}
+            <span className="text-blue-500 italic">PortAventura World</span>
+          </h2>
+        </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-12">
-        <div className="space-y-6 md:space-y-8">
-          <p className="text-slate-400 text-base md:text-lg leading-relaxed">
-            {t("corework.positiondesc")}
-          </p>
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+          <div className="lg:col-span-7 space-y-10">
+            <p className="text-slate-400 text-lg md:text-xl leading-relaxed max-w-2xl">
+              {t("corework.positiondesc")}
+            </p>
 
-          <div className="space-y-5 md:space-y-6">
-            <div className="flex gap-4">
-              <div className="mt-1 bg-blue-500/10 p-2 rounded-lg h-fit text-blue-400 shrink-0">
-                <Database size={20} />
+            <div className="space-y-8">
+              <div className="flex gap-5 group cursor-default">
+                <div className="w-12 h-12 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center shrink-0 group-hover:border-blue-500/50 group-hover:bg-blue-500/10 transition-all duration-300 group-hover:shadow-[0_0_15px_rgba(59,130,246,0.1)]">
+                  <Database
+                    className="text-slate-500 group-hover:text-blue-400 transition-colors"
+                    size={22}
+                  />
+                </div>
+                <div>
+                  <h4 className="text-white font-semibold text-lg mb-1 group-hover:text-blue-400 transition-colors">
+                    {t("corework.dataadmin")}
+                  </h4>
+                  <p className="text-slate-500 leading-relaxed text-sm md:text-base">
+                    {t("corework.dataadmindesc")}
+                  </p>
+                </div>
               </div>
-              <div>
-                <h4 className="text-white font-semibold text-sm md:text-base">
-                  {t("corework.dataadmin")}
-                </h4>
-                <p className="text-slate-400 text-xs md:text-sm leading-snug">
-                  {t("corework.dataadmindesc")}
-                </p>
-              </div>
-            </div>
 
-            <div className="flex gap-4">
-              <div className="mt-1 bg-blue-500/10 p-2 rounded-lg h-fit text-blue-400 shrink-0">
-                <Activity size={20} />
-              </div>
-              <div>
-                <h4 className="text-white font-semibold text-sm md:text-base">
-                  {t("corework.internalprojects")}
-                </h4>
-                <p className="text-slate-400 text-xs md:text-sm leading-snug">
-                  {t("corework.internalprojectsdesc")}
-                </p>
+              <div className="flex gap-5 group cursor-default">
+                <div className="w-12 h-12 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center shrink-0 group-hover:border-blue-500/50 group-hover:bg-blue-500/10 transition-all duration-300 group-hover:shadow-[0_0_15px_rgba(59,130,246,0.1)]">
+                  <Activity
+                    className="text-slate-500 group-hover:text-blue-400 transition-colors"
+                    size={22}
+                  />
+                </div>
+                <div>
+                  <h4 className="text-white font-semibold text-lg mb-1 group-hover:text-blue-400 transition-colors">
+                    {t("corework.internalprojects")}
+                  </h4>
+                  <p className="text-slate-500 leading-relaxed text-sm md:text-base">
+                    {t("corework.internalprojectsdesc")}
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <div className="relative group mt-4 lg:mt-0">
-          <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-cyan-500 rounded-2xl blur opacity-20 group-hover:opacity-40 transition duration-1000"></div>
-          <div className="relative bg-slate-900/80 border border-slate-800 p-6 md:p-8 rounded-2xl">
-            <div className="flex justify-between items-start mb-6">
-              <span className="bg-blue-500/10 text-blue-400 text-[9px] md:text-[10px] font-bold px-2 py-1 rounded-full uppercase tracking-wider border border-blue-500/20">
-                {t("corework.featured")}
-              </span>
-              <Code2 className="text-slate-600" size={20} />
-            </div>
-            <h4 className="text-lg md:text-xl font-bold text-white mb-3 italic">
-              {t("corework.projecttitle")}
-            </h4>
-            <p className="text-slate-400 text-xs md:text-sm leading-relaxed mb-6">
-              {t("corework.projectdesc")}
-            </p>
-            <div className="flex flex-wrap gap-2">
-              <span className="text-[9px] font-mono text-slate-400 bg-slate-800/50 border border-slate-700 px-2 py-1 rounded">
-                VB.NET
-              </span>
-              <span className="text-[9px] font-mono text-slate-400 bg-slate-800/50 border border-slate-700 px-2 py-1 rounded">
-                SQL SERVER
-              </span>
-              <span className="text-[9px] font-mono text-slate-400 bg-slate-800/50 border border-slate-700 px-2 py-1 rounded">
-                API REST
-              </span>
+          <div className="lg:col-span-5 relative group">
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-blue-500/5 blur-[100px] pointer-events-none group-hover:bg-blue-500/15 transition-all duration-500"></div>
+
+            <div className="relative bg-[#0a0f1e]/60 backdrop-blur-xl border border-slate-800 group-hover:border-blue-500/40 group-hover:-translate-y-1 rounded-[2rem] p-8 md:p-10 transition-all duration-500 shadow-2xl overflow-hidden">
+              <div className="flex justify-between items-start mb-10">
+                <div className="flex flex-col gap-1">
+                  <span className="text-blue-400 text-[10px] uppercase tracking-[0.2em] font-bold">
+                    {t("corework.featured")}
+                  </span>
+                  <div className="h-0.5 w-8 bg-blue-500 rounded-full group-hover:w-12 transition-all duration-500"></div>
+                </div>
+                <Code2
+                  className="text-slate-600 group-hover:text-blue-400 transition-colors"
+                  size={20}
+                />
+              </div>
+
+              <h3 className="text-2xl font-bold text-white mb-4">
+                {t("corework.projecttitle")}
+              </h3>
+
+              <p className="text-slate-400 text-sm md:text-base leading-relaxed mb-10">
+                {t("corework.projectdesc")}
+              </p>
+
+              <div className="flex flex-wrap gap-2 pt-6 border-t border-slate-800/50">
+                {["VB.NET", "SQL SERVER", "API REST"].map((tech) => (
+                  <span
+                    key={tech}
+                    className="px-3 py-1 bg-slate-900 border border-slate-800 text-slate-400 text-[10px] font-mono rounded-md group-hover:border-slate-700 transition-colors"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
             </div>
           </div>
         </div>
@@ -88,3 +103,5 @@ export const CoreWork = () => {
     </section>
   );
 };
+
+export default CoreWork;

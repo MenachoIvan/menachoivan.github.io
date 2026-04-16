@@ -1,42 +1,42 @@
 {
   "hero": {
-    "role": "// Backend Developer & Systems Tech",
-    "description": "Specialized in robust API development and systems optimization. Currently driving digital infrastructure at",
+    "role": "// Web Developer & Information Systems Technician",
+    "description": "Software development and information systems management focused on availability and operational efficiency. Currently specialized in data flow optimization and critical services integration at",
     "cta": "Let's talk",
     "status": "Available for projects"
   },
   "nav": {
-    "contact": "Contact me"
+    "contact": "Contact"
   },
   "techskills": {
     "stack": "// Tech_Stack",
     "lat": "Languages and Technologies",
-    "filo": "Learning Philosophy",
-    "filodesc": "Ability to learn independently and adapt quickly to new technologies. My approach focuses on efficient problem-solving, regardless of language or platform."
+    "filo": "Professional Approach",
+    "filodesc": "Constant pursuit of process optimization and automation. This professional approach focuses on reducing operational load through well-documented systems, seamless integrations, and a logical architecture that enables sustainable platform growth."
   },
   "education": {
     "title": "Education",
     "degree": "Degree in Web and Mobile Application Development Techniques",
-    "uni": "Rovira i Virgili University",
+    "uni": "Universitat Rovira i Virgili",
     "date": "February 2025",
     "lang": "Languages",
-    "cast": "Spanish ",
+    "cast": "Spanish",
     "castlvl": "Native",
-    "cat": " Catalan",
+    "cat": "Catalan",
     "catlvl": "Native",
     "eng": "English",
     "englvl": "Technical / B2"
   },
   "corework": {
-    "comment": "// News and Projects",
-    "position": "Information Systems in",
-    "positiondesc": "Comprehensive management of the **Ticketing** ecosystem, ensuring data integrity and a constant flow of information in a high-demand environment.",
-    "dataadmin": "Data Administration",
-    "dataadmindesc": "Management of critical databases and preventive maintenance of internal APIs.",
-    "internalprojects": "Internal Support and Projects",
-    "internalprojectsdesc": "Development of tools for optimizing operational processes.",
+    "comment": "// Current_Role_and_Projects",
+    "position": "Information Systems at",
+    "positiondesc": "Technical management of the admissions ecosystem in one of Europe's leading tourist destinations. Responsible for ensuring data integrity and system performance in a high-concurrency and mission-critical environment.",
+    "dataadmin": "Data Management",
+    "dataadmindesc": "Administration of high-availability databases and internal API evolution. Focused on latency reduction and preventive maintenance to ensure system scalability.",
+    "internalprojects": "Automation & Internal Solutions",
+    "internalprojectsdesc": "Design and development of custom tools for workflow optimization. Transforming manual processes into automated digital solutions that improve cross-departmental operational efficiency.",
     "featured": "Featured Project",
     "projecttitle": "Ticketing & Hotels Interface",
-    "projectdesc": "Development of an interface to connect reservation systems with the ticketing engine. Automates the flow of information, eliminating manual errors and streamlining customer access."
+    "projectdesc": "Development of an interface to connect hotel reservation systems with the ticketing engine. Automates information flow, eliminating manual errors and streamlining guest access."
   }
 }

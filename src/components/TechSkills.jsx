@@ -17,7 +17,7 @@ export const TechSkills = () => {
       items: ["Kotlin", "Swift", "Python"],
     },
     {
-      category: "Sistemas & Core",
+      category: "Systems & Core",
       icon: <Cpu size={18} />,
       items: ["C", "Visual Basic", "SQL"],
     },

@@ -18,14 +18,20 @@
     "title": "Education",
     "degree": "Degree in Web and Mobile Application Development Techniques",
     "uni": "Universitat Rovira i Virgili",
-    "date": "February 2025",
+    "date": "2019 — 2024",
     "lang": "Languages",
     "cast": "Spanish",
     "castlvl": "Native",
     "cat": "Catalan",
     "catlvl": "Native",
     "eng": "English",
-    "englvl": "Technical / B2"
+    "englvl": "Technical / B2",
+    "erasmus": "Erasmus+ Program",
+    "erasmusuni": "Università degli Studi di Genova",
+    "erasmusdate": "February 2022",
+    "aws": "AWS Technical Essentials",
+    "awsinfo": "Amazon Web Services Training",
+    "awsdate": "November 2023"
   },
   "corework": {
     "comment": "// Current_Role_and_Projects",

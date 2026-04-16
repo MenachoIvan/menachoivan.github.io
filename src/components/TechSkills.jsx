@@ -9,17 +9,25 @@ export const TechSkills = () => {
     {
       category: "Web dev",
       icon: <Code size={18} />,
-      items: ["Node.js", "React", "TypeScript", "JavaScript", "HTML", "CSS"],
-    },
-    {
-      category: "Mobile & Others",
-      icon: <Layers size={18} />,
-      items: ["Kotlin", "Swift", "Python"],
+      items: [
+        "Node.js",
+        "React",
+        "NextJS",
+        "TypeScript",
+        "JavaScript",
+        "Tailwind",
+        "Rest APIs",
+      ],
     },
     {
       category: "Systems & Core",
       icon: <Cpu size={18} />,
-      items: ["C", "Visual Basic", "SQL"],
+      items: ["Java", "VB.NET Framework", "C/C++", "SQL Server", "Oracle DB"],
+    },
+    {
+      category: "Mobile & Others",
+      icon: <Layers size={18} />,
+      items: ["Kotlin", "Swift", "Python", "Git/Github"],
     },
   ];
 

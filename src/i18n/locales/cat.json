@@ -18,14 +18,20 @@
     "title": "Educació",
     "degree": "Grau en Tècniques de Desenvolupament d'Aplicacions Web i Mòbils",
     "uni": "Universitat Rovira i Virgili",
-    "date": "Febrer 2025",
+    "date": "2019 — 2024",
     "lang": "Idiomes",
     "cast": "Castellà",
     "castlvl": "Natiu",
     "cat": "Català",
     "catlvl": "Natiu",
     "eng": "Anglès",
-    "englvl": "Tècnic / B2"
+    "englvl": "Tècnic / B2",
+    "erasmus": "Programa Erasmus+",
+    "erasmusuni": "Università degli Studi di Genova",
+    "erasmusdate": "Febrer 2022",
+    "aws": "AWS Technical Essentials",
+    "awsinfo": "Formació d'Amazon Web Services",
+    "awsdate": "Novembre 2023"
   },
   "corework": {
     "comment": "// Actualitat_i_Projectes",

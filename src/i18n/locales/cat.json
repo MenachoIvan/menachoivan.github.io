@@ -44,5 +44,17 @@
     "featured": "Projecte Destacat",
     "projecttitle": "Ticketing & Hotels Interface",
     "projectdesc": "Desenvolupament d'una interfície per connectar sistemes de reserves d'hotels amb el motor de ticketing. Automatitza el flux d'informació, eliminant errors manuals i agilitzant l'accés dels clients."
+  },
+  "terminal": {
+    "welcome": "Menacho OS v1.0.4 - Inicialitzant sistemes...",
+    "instruction": "Escriu 'help' per veure les comandes disponibles.",
+    "help": "Comandes disponibles: about, experience, stack, status, run, contact, clear.",
+    "about": "Enginyer de Programari i Especialista en Sistemes. Enfocament actual: optimització de fluxos de dades i serveis crítics a PortAventura World.",
+    "exp": "[2021-Actualitat] Sistemes d'Informació @ PortAventura World. [2022] Erasmus @ UniGe. [2019-2024] Grau en Enginyeria Informàtica @ URV.",
+    "stack": "Backend: Node.js, Java, VB.NET. DB: SQL Server, Oracle. Cloud: AWS Technical Essentials.",
+    "status": "Kernel: 1.0.4 | Env: Producció | Estat: Estable | Disponibilitat: 99.9% | Latència: 12ms",
+    "contact": "Iniciant protocol de comunicació... LinkedIn: https://www.linkedin.com/in/ivan-menacho/ | GitHub: https://github.com/MenachoIvan",
+    "run": "Marques Personals: Marató: 3:39:15 | Mitja Marató: 1:43:28 | 10K: 43:22. La disciplina ho és tot. Strava: https://www.strava.com/athletes/48209648",
+    "error": "Comanda no trobada: {{command}}. Escriu 'help' per assistència."
   }
 }

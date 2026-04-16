@@ -44,5 +44,17 @@
     "featured": "Featured Project",
     "projecttitle": "Ticketing & Hotels Interface",
     "projectdesc": "Development of an interface to connect hotel reservation systems with the ticketing engine. Automates information flow, eliminating manual errors and streamlining guest access."
+  },
+  "terminal": {
+    "welcome": "Menacho OS v1.0.4 - Initializing systems...",
+    "instruction": "Type 'help' to see available commands.",
+    "help": "Available commands: about, experience, stack, status, run, contact, clear.",
+    "about": "Software Engineer & Information Systems Technician. Current focus: data flow optimization and mission-critical services at PortAventura World.",
+    "exp": "[2021-Present] Information Systems @ PortAventura World. [2022] Erasmus @ UniGe. [2019-2024] B.Sc. in Computer Engineering @ URV.",
+    "stack": "Backend: Node.js, Java, VB.NET. DB: SQL Server, Oracle. Cloud: AWS Technical Essentials.",
+    "status": "Kernel: 1.0.4 | Env: Production | Status: Stable | Uptime: 99.9% | Latency: 12ms",
+    "contact": "Establishing communication protocol... LinkedIn: https://www.linkedin.com/in/ivan-menacho/ | GitHub: https://github.com/MenachoIvan",
+    "run": "Personal Records: Marathon: 3:39:15 | Half Marathon: 1:43:28 | 10K: 43:22. Discipline is everything. Strava: https://www.strava.com/athletes/48209648",
+    "error": "Command not found: {{command}}. Type 'help' for assistance."
   }
 }

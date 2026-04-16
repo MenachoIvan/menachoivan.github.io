@@ -14,9 +14,9 @@ function App() {
       <main className="max-w-6xl mx-auto px-6 pt-28 md:pt-36">
         <Hero />
         <CoreWork />
-        <Terminal />
         <Education />
         <TechSkills />
+        <Terminal />
       </main>
 
       <footer className="py-12 md:py-20 text-center border-t border-slate-900">

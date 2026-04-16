@@ -4,6 +4,7 @@ import { Hero } from "./components/Hero";
 import { CoreWork } from "./components/CoreWork";
 import { Education } from "./components/Education";
 import { TechSkills } from "./components/TechSkills";
+import { Terminal } from "./components/Terminal";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <main className="max-w-6xl mx-auto px-6 pt-28 md:pt-36">
         <Hero />
         <CoreWork />
+        <Terminal />
         <Education />
         <TechSkills />
       </main>

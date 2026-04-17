@@ -18,7 +18,7 @@ export const CoreWork = ({ isDevMode }) => {
           <span
             className={`font-mono text-xs md:text-sm tracking-[0.3em] uppercase mb-4 block transition-colors duration-500 ${isDevMode ? "text-lime-500" : "text-blue-500"}`}
           >
-            // {t("corework.comment")}
+            {t("corework.comment")}
           </span>
           <h2 className="text-3xl md:text-5xl font-bold text-white tracking-tight">
             {t("corework.position")}{" "}

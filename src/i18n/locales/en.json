@@ -1,7 +1,7 @@
 {
   "hero": {
-    "role": "// Web Developer & Information Systems Technician",
-    "description": "Software development and information systems management focused on availability and operational efficiency. Currently specialized in data flow optimization and critical services integration at",
+    "role": "// WEB_DEVELOPER_AND_INFORMATION_SYSTEMS_TECHNICIAN",
+    "description": "Software development and information systems management focused on availability and operational efficiency. Currently specialized in data flow optimization and critical services integration at PortAventura World.",
     "cta": "Let's talk",
     "status": "Available for projects"
   },
@@ -34,12 +34,16 @@
     "awsdate": "November 2023"
   },
   "corework": {
-    "comment": "// Main Experience",
-    "position": "Systems Analyst at",
-    "positiondesc": "Specialized in data infrastructure administration and the development of tailored digital solutions that improve cross-departmental operational efficiency.",
+    "comment": "// MAIN_EXPERIENCE",
+    "position": "Information Systems Technician at ",
+    "positiondesc": "Specialized in the administration of data infrastructures and the development of digital solutions that improve interdepartmental operational efficiency. Currently managing the admissions system.",
+    "dataadmin": "Infrastructure Management",
+    "dataadmindesc": "Administration of critical databases with high data volumes.",
+    "internalprojects": "Internal Projects",
+    "internalprojectsdesc": "Development of internal tools for process automation.",
     "featured": "Featured Project",
     "projecttitle": "Ticketing & Hotels Interface",
-    "projectdesc": "Development of an interface to connect hotel reservation systems with the ticketing engine. Automates information flow, eliminating manual errors and streamlining guest access."
+    "projectdesc": "Development of an interface to connect hotel reservation systems with the ticketing engine. Automates the information flow, eliminating manual errors and streamlining customer access."
   },
   "terminal": {
     "welcome": "Menacho OS v1.0.4 - Initializing systems...",
@@ -47,7 +51,7 @@
     "help": "Available commands: about, experience, stack, status, run, contact, debug, clear.",
     "debug": "Use 'debug' or 'dev' to activate engineering mode. Use 'debug --off' to return to production.",
     "about": "Software Engineer & Information Systems Technician. Current focus: data flow optimization and mission-critical services at PortAventura World.",
-    "exp": "[2021-Present] Information Systems @ PortAventura World. [2022] Erasmus @ UniGe. [2019-2024] B.Sc. in Computer Engineering @ URV.",
+    "exp": "[2023-Present] Information Systems @ PortAventura World. [2022] Erasmus @ UniGe. [2019-2024] Degree in Web and Mobile Application Development Techniques @ URV.",
     "stack": "Backend: Node.js, Java, VB.NET. DB: SQL Server, Oracle. Cloud: AWS Technical Essentials.",
     "status": "Kernel: 1.0.4 | Env: Production | Status: Stable | Uptime: 99.9% | Latency: 12ms",
     "contact": "Establishing communication protocol... LinkedIn: https://www.linkedin.com/in/ivan-menacho/ | GitHub: https://github.com/MenachoIvan",

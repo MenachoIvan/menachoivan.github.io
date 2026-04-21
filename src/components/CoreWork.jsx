@@ -12,7 +12,7 @@ export const CoreWork = ({ isDevMode }) => {
   const { t } = useTranslation();
 
   return (
-    <section className="py-20 md:py-32">
+    <section className="py-10 md:py-16">
       <div className="flex flex-col gap-12">
         <div>
           <span
@@ -23,7 +23,7 @@ export const CoreWork = ({ isDevMode }) => {
           <h2 className="text-3xl md:text-5xl font-bold text-white tracking-tight">
             {t("corework.position")}{" "}
             <span
-              className={`italic transition-colors duration-500 ${isDevMode ? "text-lime-500 shadow-lime-500/20" : "text-blue-500"}`}
+              className={`italic transition-colors duration-500 ${isDevMode ? "text-lime-500" : "text-blue-500"}`}
             >
               PortAventura World
             </span>
@@ -56,7 +56,7 @@ export const CoreWork = ({ isDevMode }) => {
                   <div
                     className={`w-12 h-12 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center shrink-0 transition-all duration-500 ${
                       isDevMode
-                        ? "group-hover:border-lime-500/50 group-hover:bg-lime-500/10 shadow-[0_0_15px_rgba(132,204,22,0)] group-hover:shadow-lime-500/20"
+                        ? "group-hover:border-lime-500/50 group-hover:bg-lime-500/10 group-hover:shadow-lime-500/20"
                         : "group-hover:border-blue-500/50 group-hover:bg-blue-500/10"
                     }`}
                   >
@@ -169,8 +169,6 @@ export const CoreWork = ({ isDevMode }) => {
                   </button>
                 </div>
               </div>
-
-              <div className="absolute top-0 -inset-full h-full w-1/2 z-50 block transform -skew-x-12 bg-gradient-to-r from-transparent via-white/[0.03] to-transparent group-hover:animate-[sweep_2s_infinite] pointer-events-none"></div>
             </div>
           </div>
         </div>
@@ -178,5 +176,3 @@ export const CoreWork = ({ isDevMode }) => {
     </section>
   );
 };
-
-export default CoreWork;

@@ -12,7 +12,7 @@ export const Hero = ({ isDevMode }) => {
             isDevMode ? "text-lime-500/70" : "text-blue-500/70"
           }`}
         >
-          // WEB DEVELOPER & INFORMATION SYSTEMS TECHNICIAN
+          {t("hero.role")}
         </h2>
 
         <div className="flex flex-col mb-6">

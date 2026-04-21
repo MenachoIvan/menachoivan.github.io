@@ -1,7 +1,7 @@
 {
   "hero": {
-    "role": "// Desenvolupador Web i Tècnic de Sistemes d'Informació",
-    "description": "Desenvolupament de programari i gestió de sistemes d'informació amb enfocament en la disponibilitat i eficiència operativa. Actualment especialitzat en l'optimització de fluxos de dades i integració de serveis crítics a",
+    "role": "// DESENVOLUPADOR_WEB_Y_TÈCNIC_EN_SISTEMES_DE_INFORMACIÓ",
+    "description": "Desenvolupament de programari i gestió de sistemes d'informació amb enfocament en la disponibilitat i eficiència operativa. Actualment especialitzat en l'optimització de fluxos de dades i integració de serveis crítics a PortAventura World.",
     "cta": "Parlem-ne",
     "status": "Disponible per a projectes"
   },
@@ -34,12 +34,16 @@
     "awsdate": "Novembre 2023"
   },
   "corework": {
-    "comment": "// Experiència Principal",
-    "position": "Analista de Sistemes a",
-    "positiondesc": "Especialitzat en l'administració d'infraestructures de dades i el desenvolupament de solucions digitals a mida que milloren l'eficiència operativa interdepartamental.",
+    "comment": "// EXPERIÈNCIA_PRINCIPAL",
+    "position": "Tècnic de Sistemes d'Informació a ",
+    "positiondesc": "Especialitzat en l'administració d'infraestructures de dades i el desenvolupament de solucions digitals que milloren l'eficiència operativa interdepartamental. Actualment gestionant el sistema d'admissions.",
+    "dataadmin": "Gestió d'Infraestructures",
+    "dataadmindesc": "Administració de bases de dades crítiques amb alts volums de dades.",
+    "internalprojects": "Projectes Interns",
+    "internalprojectsdesc": "Desenvolupament d'eines internes per a l'automatització de processos.",
     "featured": "Projecte Destacat",
-    "projecttitle": "Ticketing & Hotels Interface",
-    "projectdesc": "Desenvolupament d'una interfície per connectar sistemes de reserves d'hotels amb el motor de ticketing. Automatitza el flux d'informació, eliminant errors manuals i agilitzant l'accés dels clients."
+    "projecttitle": "Interfície de Ticketing i Hotels",
+    "projectdesc": "Desenvolupament d'una interfície per connectar els sistemes de reserves d'hotel amb el motor de ticketing. Automatitza el flux d'informació, eliminant errors manuals i optimitzant l'accés dels clients."
   },
   "terminal": {
     "welcome": "Menacho OS v1.0.4 - Inicialitzant sistemes...",
@@ -47,7 +51,7 @@
     "help": "Comandes disponibles: about, experience, stack, status, run, contact, debug, clear.",
     "debug": "Fes servir 'debug' o 'dev' per activar el mode enginyeria. Fes servir 'debug --off' per tornar a producció.",
     "about": "Enginyer de Programari i Especialista en Sistemes. Enfocament actual: optimització de fluxos de dades i serveis crítics a PortAventura World.",
-    "exp": "[2021-Actualitat] Sistemes d'Informació @ PortAventura World. [2022] Erasmus @ UniGe. [2019-2024] Grau en Enginyeria Informàtica @ URV.",
+    "exp": "[2023-Present] Sistemes d'Informació @ PortAventura World. [2022] Erasmus @ UniGe. [2019-2024] Grau en Tècniques de desenvolupament d'aplicacions web i mòbil @ URV.",
     "stack": "Backend: Node.js, Java, VB.NET. DB: SQL Server, Oracle. Cloud: AWS Technical Essentials.",
     "status": "Kernel: 1.0.4 | Env: Producció | Estat: Estable | Disponibilitat: 99.9% | Latència: 12ms",
     "contact": "Iniciant protocol de comunicació... LinkedIn: https://www.linkedin.com/in/ivan-menacho/ | GitHub: https://github.com/MenachoIvan",
